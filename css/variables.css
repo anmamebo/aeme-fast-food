@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #362415;
+    --secondary-color: #eac784;
+    --tertiary-color: #0b421a;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/oswald/Oswald-Regular.ttf), url(../fonts/oswald/Oswald-Bold.ttf),
+        url(../fonts/oswald/Oswald-ExtraLight.ttf), url(../fonts/oswald/Oswald-Light.ttf),
+        url(../fonts/oswald/Oswald-Medium.ttf), url(../fonts/oswald/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/quicksand/Quicksand-Regular.ttf), url(../fonts/quicksand/Quicksand-Bold.ttf),
+        url(../fonts/quicksand/Quicksand-Light.ttf), url(../fonts/quicksand/Quicksand-Medium.ttf),
+        url(../fonts/quicksand/Quicksand-SemiBold.ttf);
+}

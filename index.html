@@ -10,13 +10,82 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
+    <!-- ESTILOS PERSONALIZADOS -->
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- BOOTSTRAP -->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <script defer src="js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <!-- NAVBAR -->
+    <nav class="link navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="gelatine-effect navbar-brand" href="index.html">
+                <img width="80" height="80" class="d-inline-block align-text-top" src="img/logo.png"
+                    alt="Logo Aeme Fast Food" />
+            </a>
+
+            <!-- BOTÓN COLLAPSE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- CONTENIDO COLLAPSE -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- ENLACES NAVBAR -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">Carta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="encuentranos.html">Encuentranos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="challenge.html">Challenge</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservar.html">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="carta.html" class="nav-link px-2 text-muted">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a href="novedades.html" class="nav-link px-2 text-muted">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="encuentranos.html" class="nav-link px-2 text-muted">Encuentranos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="challenge.html" class="nav-link px-2 text-muted">Challenge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservar.html" class="nav-link px-2 text-muted">Reservar</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">
+                © 2023
+                <a target="_blank" class="text-dark" href="https://github.com/anmamebo">Antonio Manuel Mérida
+                    Borrero</a>
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>

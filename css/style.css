@@ -1,0 +1,119 @@
+@import url('variables.css');
+
+/* Estilos generales */
+.btn:focus,
+input,
+textarea,
+button:focus,
+select {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+p::selection,
+a::selection,
+input::selection,
+label::selection,
+select::selection {
+    background: var(--primary-color) !important;
+    color: white;
+}
+
+/* Header */
+nav {
+    font-weight: 700;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+nav .nav-link {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    color: var(--tertiary-color) !important;
+}
+
+nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+nav .nav-link.active {
+    color: var(--tertiary-color) !important;
+}
+
+/* Animación subrayado enlaces */
+.link .nav-link {
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.link .nav-link:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--secondary-color);
+    /*animaciondederechaaizquierda*/
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+    -ms-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+}
+
+.link .nav-link:hover:after {
+    /*animacion de derecha a izquierda*/
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Gelatine effect */
+.gelatine-effect:hover {
+    animation: gelatine 0.5s infinite;
+}
+
+@keyframes gelatine {
+
+    from,
+    to {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+
+/* Footer */
+footer {
+    font-family: Quicksand;
+}
+
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+
+    footer {
+        font-size: 9pt !important;
+    }
+
+}
