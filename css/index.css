@@ -364,4 +364,9 @@
     font-size: 12pt;
   }
 
+  .subscribe-container figcaption {
+    height: 200px;
+    margin-top: 30px;
+  }
+
 }
