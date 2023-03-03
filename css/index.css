@@ -86,6 +86,56 @@
   }
 }
 
+/* Game banner */
+.game-banner {
+  background-color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 16pt;
+  font-family: Quicksand;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.game-banner .line {
+  background-color: var(--primary-color);
+  width: 15px !important;
+  height: 35px;
+  padding: 0;
+}
+
+.game-banner a {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 150px;
+  font-weight: 800;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.game-banner a:hover {
+  border: 1px solid var(--primary-color);
+}
+
+/* Chef section */
+.chef-img-container {
+  height: 600px;
+}
+
+.chef-img {
+  height: inherit !important;
+}
+
+.chef-text {
+  font-size: 16pt;
+  font-weight: 600;
+  color: var(--tertiary-color);
+  font-family: Quicksand;
+}
+
 
 
 /* RESPONSIVE */
@@ -105,4 +155,16 @@
     height: 18px;
   }
 
+}
+
+@media only screen and (max-width: 992px) {
+  
+  .chef-img-container {
+    height: 400px;
+  }
+
+  .chef-text {
+    font-size: 12pt;
+  }
+  
 }
