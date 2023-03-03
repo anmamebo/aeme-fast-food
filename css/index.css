@@ -138,9 +138,10 @@
 
 /* Menú banner */
 .menu-banner-container {
-  background-image: url(../img/fondo-textura.jpg); 
+  background-image: url(../img/fondo-textura.jpg);
   background-size: cover;
 }
+
 .menu-banner-container p {
   font-weight: 800;
   font-size: 19pt;
@@ -227,11 +228,116 @@
   font-weight: 500;
 }
 
+/* Suscripción ofertas */
+.subscribe-container {
+  background-image: url(../img/fondo-textura.jpg);
+  background-size: cover;
+}
+
+.subscribe-container figcaption {
+  height: 300px;
+}
+
+.subscribe-container figcaption img {
+  height: inherit;
+  object-fit: contain;
+}
+
+.subscribe-container p {
+  margin: 0;
+  font-size: 16pt;
+  font-weight: 800;
+  font-family: Quicksand;
+  color: var(--primary-color);
+}
+
+.subscribe-container button {
+  background-color: var(--primary-color);
+  font-weight: 800;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+  padding: 10px 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.subscribe-container button:hover {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Modal suscribete */
+.modal-header {
+  background-color: var(--secondary-color);
+}
+
+#modal-header-title {
+  font-weight: 800;
+  font-size: 17pt;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  padding-left: 20pt;
+  color: var(--primary-color);
+}
+
+.modal-header button {
+  color: var(--primary-color) !important;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  padding: 40px 30px !important;
+  font-family: Quicksand;
+}
+
+.modal-header {
+  border-bottom: var(--secondary-color) !important;
+}
+
+.form-control {
+  color: var(--primary-color) !important;
+  border: none !important;
+  border-bottom: 1px solid var(--primary-color) !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+
+.modal-body button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  border-color: var(--secondary-color);
+  padding: 8px 50px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  float: right;
+}
+
+.modal-body button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
 
 
 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {
-  
+
   .carousel-height {
     height: 50vh;
   }
@@ -249,7 +355,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  
+
   .chef-img-container {
     height: 400px;
   }
@@ -257,5 +363,5 @@
   .chef-text {
     font-size: 12pt;
   }
-  
+
 }
