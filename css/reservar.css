@@ -1,1 +1,130 @@
 @import url('variables.css');
+
+.imagen-container {
+    height: calc(100vh - 100px);
+}
+
+.reserva-container img {
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.formulario-container {
+    font-family: Quicksand;
+    border-radius: 18px !important;
+    -webkit-border-radius: 18px !important;
+    -moz-border-radius: 18px !important;
+    -ms-border-radius: 18px !important;
+    -o-border-radius: 18px !important;
+    border: 1px solid var(--primary-color);
+    color: var(--tertiary-color);
+    width: 25% !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+.formulario-container > div > p.h3 {
+    font-family: Oswald;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--secondary-color);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form-control,
+.form-select {
+    color: var(--primary-color) !important;
+    border: none !important;
+    border-bottom: 1px solid var(--primary-color) !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+#reservarButton {
+    margin-top: 6px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: Oswald;
+    letter-spacing: 2px;
+    border-color: var(--secondary-color);
+    padding: 8px 50px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    float: right;
+}
+
+#reservarButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+
+
+/* Responsive */
+@media only screen and (max-width: 1320px) {
+
+    .formulario-container {
+        width: 40% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1140px) {
+
+    .formulario-container {
+        width: 50% !important;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .imagen-container {
+        height: 400px;
+    }
+
+    .formulario-container {
+        position: relative !important;
+        border: none;
+        width: 100% !important;
+        display: block;
+        margin: 0 !important;
+        max-width: 100% !important;
+        padding: 20px 100px !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .imagen-container {
+        height: 270px;
+    }
+
+    .formulario-container {
+        padding: 20px 50px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .formulario-container {
+        padding: 20px 10px !important;
+    }
+
+}

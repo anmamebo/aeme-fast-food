@@ -59,7 +59,90 @@
     </div>
   </nav>
 
-  
+  <!-- RESERVA CONTAINER -->
+  <div class="reserva-container position-relative container-fluid p-0">
+    <!-- IMAGEN FONDO -->
+    <div class="imagen-container">
+      <figcaption class="w-100 h-100">
+        <img class="h-100 w-100" src="img/reserva-fondo.jpg" alt="Fondo pizza entrando en horno">
+      </figcaption>
+    </div>
+
+    <!-- FORMULARIO CONTAINER -->
+    <div class="formulario-container container bg-white p-lg-3 mt-lg-5 ms-lg-5 row">
+      <div class="col-12">
+        <p class="m-0 mb-4 py-3 text-center h3">HAZ TU RESERVA</p>
+        <p>Te ayudamos a encontrar la reserva ideal para ti. Tú tan solo preocupate de disfrutar.</p>
+      </div>
+      <div class="col-12">
+        <!-- FORMULARIO RESERVA -->
+        <form>
+          <div class="mb-3">
+            <select id="restaurantInput" class="form-select" aria-label="Default select example">
+              <option selected>Restaurante</option>
+              <option value="1">Univ. Pablo de Olavide</option>
+              <option value="2" disabled>Alcalá de Guadaíra --- ¡Proxima apertura!</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" id="dateInput">
+          </div>
+          <div class="mb-3">
+            <select id="hourInput" class="form-select" aria-label="Default select example">
+              <option selected>Hora</option>
+              <option value="" disabled>Comida</option>
+              <option value="1">13:00</option>
+              <option value="2">13:30</option>
+              <option value="3">14:00</option>
+              <option value="4">14:30</option>
+              <option value="5">15:00</option>
+              <option value="6">15:30</option>
+              <option value="7">16:00</option>
+              <option value="8">16:30</option>
+              <option value="" disabled>Cena</option>
+              <option value="9">20:30</option>
+              <option value="10">21:00</option>
+              <option value="11">21:30</option>
+              <option value="12">22:00</option>
+              <option value="13">22:30</option>
+              <option value="14">23:00</option>
+              <option value="15">23:30</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <select id="peopleInput" class="form-select" aria-label="Default select example">
+              <option selected>Personas</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="nameInput" placeholder="Nombre">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="phoneInput" placeholder="Teléfono">
+          </div>
+          <button id="reservarButton" type="submit" class="btn">RESERVAR MESA</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <div class="container">
