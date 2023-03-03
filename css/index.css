@@ -136,6 +136,97 @@
   font-family: Quicksand;
 }
 
+/* Menú banner */
+.menu-banner-container {
+  background-image: url(../img/fondo-textura.jpg); 
+  background-size: cover;
+}
+.menu-banner-container p {
+  font-weight: 800;
+  font-size: 19pt;
+  font-family: Quicksand;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+.menu-banner-container a {
+  background-color: var(--secondary-color);
+  font-weight: 800;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  padding: 10px 40px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.menu-banner-container a:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Menú especial */
+.especial-menu-container P {
+  margin: 0;
+}
+
+#especial-menu-title {
+  font-size: 19pt;
+  font-weight: 900;
+  font-family: Oswald;
+  letter-spacing: 3px;
+  color: var(--primary-color);
+}
+
+#especial-menu-availability {
+  font-weight: 700;
+  font-family: Quicksand;
+  color: var(--tertiary-color);
+}
+
+#especial-menu-name {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 800;
+  font-family: Quicksand;
+  font-size: 16pt;
+  letter-spacing: 3px;
+}
+
+.especial-menu-table figcaption {
+  height: 300px;
+}
+
+.especial-menu-table figcaption img {
+  height: inherit;
+  object-fit: cover;
+}
+
+.especial-menu-table #em-burger-name,
+.especial-menu-table #em-menu-description,
+.especial-menu-table #em-menu-price {
+  color: var(--tertiary-color);
+}
+
+.especial-menu-table #em-burger-name {
+  font-size: 19pt;
+  font-weight: 800;
+  font-family: Oswald;
+}
+
+.especial-menu-table #em-menu-price {
+  font-weight: 700;
+  font-size: 14pt;
+  font-family: Quicksand;
+}
+
+.especial-menu-table #em-menu-description {
+  font-family: Quicksand;
+  font-weight: 500;
+}
+
 
 
 /* RESPONSIVE */
