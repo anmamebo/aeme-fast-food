@@ -11,6 +11,7 @@
 }
 
 .card .card-img-top {
+  min-height: 350px;
   height: 350px;
   object-fit: cover;
 }
