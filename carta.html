@@ -60,56 +60,147 @@
     </div>
   </nav>
 
-  <main>
+  <main class="container-fluid px-md-5 py-5">
     <!-- MENÚ TAB -->
     <ul class="nav nav-tabs" id="menuTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="entrantes-tab" data-bs-toggle="tab" data-bs-target="#entrantes-tab-pane"
-          type="button" role="tab" aria-controls="entrantes-tab-pane" aria-selected="true">ENTRANTES</button>
+          type="button" role="tab" aria-controls="entrantes-tab-pane" aria-selected="true">Entrantes</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="ensaladas-tab" data-bs-toggle="tab" data-bs-target="#ensaladas-tab-pane"
-          type="button" role="tab" aria-controls="ensaladas-tab-pane" aria-selected="false">ENSALADAS</button>
+          type="button" role="tab" aria-controls="ensaladas-tab-pane" aria-selected="false">Ensaladas</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="carnes-tab" data-bs-toggle="tab" data-bs-target="#carnes-tab-pane" type="button"
-          role="tab" aria-controls="carnes-tab-pane" aria-selected="false">CARNES</button>
+          role="tab" aria-controls="carnes-tab-pane" aria-selected="false">Carnes</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="pizzas-tab" data-bs-toggle="tab" data-bs-target="#pizzas-tab-pane" type="button"
-          role="tab" aria-controls="contact-tab-pane" aria-selected="false">PIZZAS</button>
+          role="tab" aria-controls="contact-tab-pane" aria-selected="false">Pizzas</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="hamburguesas-tab" data-bs-toggle="tab" data-bs-target="#hamburguesas-tab-pane"
-          type="button" role="tab" aria-controls="pizzas-tab-pane" aria-selected="false">HAMBURGUESAS</button>
+          type="button" role="tab" aria-controls="pizzas-tab-pane" aria-selected="false">Hamburguesas</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="postres-tab" data-bs-toggle="tab" data-bs-target="#postres-tab-pane" type="button"
-          role="tab" aria-controls="postres-tab-pane" aria-selected="false">POSTRES</button>
+          role="tab" aria-controls="postres-tab-pane" aria-selected="false">Postres</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="bebidas-tab" data-bs-toggle="tab" data-bs-target="#bebidas-tab-pane" type="button"
-          role="tab" aria-controls="bebidas-tab-pane" aria-selected="false">BEBIDAS</button>
+          role="tab" aria-controls="bebidas-tab-pane" aria-selected="false">Bebidas</button>
       </li>
 
     </ul>
     <!-- MENÚ TAB CONTENT -->
-    <div class="tab-content" id="menuTabContent">
+    <div class="tab-content pt-4" id="menuTabContent">
+      <!-- ENTRANTES -->
       <div class="tab-pane fade show active" id="entrantes-tab-pane" role="tabpanel" aria-labelledby="entrantes-tab"
         tabindex="0">
-        ...</div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante1.jpg" class="card-img-top" alt="Aros de cebolla">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Aros de cebolla</h5>
+                <p class="food-description card-text">Crujientes aros de cebolla, acompañados de salsa Barbacoa.</p>
+                <p class="food-price card-text">4.00 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante2.jpg" class="card-img-top" alt="Nuggets de pollo">
+              <div class="card-body h-100">
+                <h5 class="card-title text-uppercase">Nuggets de pollo</h5>
+                <p class="food-description card-text">Deliciosos nuggets de pollo al horno.</p>
+                <p class="food-price card-text">3.90 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante3.jpg" class="card-img-top" alt="Tequeños">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Tequeños</h5>
+                <p class="food-description card-text">Tequeños rellenos de queso derretido, con tu salsa favorita de la casa.</p>
+                <p class="food-price card-text">3.80 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante4.jpg" class="card-img-top" alt="Patatas con queso y bacon">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Patatas Bacon Cheese</h5>
+                <p class="food-description card-text">Deliciosas y crujientes patatas fritas con mix de quesos fundidos, coronadas con salsa ranchera y bacon crispy.</p>
+                <p class="food-price card-text">5.50 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante5.jpg" class="card-img-top" alt="Nachos Tex Mex">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Nachos Tex Mex</h5>
+                <p class="food-description card-text">Nachos de maíz, mezcla de quesos, cebolla roja, chorizo picado, chiles jalapeños, cilantro y crema agria.</p>
+                <p class="food-price card-text">4.90 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante6.jpg" class="card-img-top" alt="Alitas de pollo">
+              <div class="card-body ">
+                <h5 class="card-title text-uppercase">Alitas de pollo</h5>
+                <p class="food-description card-text">Alitas de pollo marinadas en salsa BBQ Chipotle y salsa sweet chili.</p>
+                <p class="food-price card-text">4.50 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante7.jpg" class="card-img-top" alt="Chicken Fingers">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Chicken Fingers</h5>
+                <p class="food-description card-text">Fingers de pollo Cornflakes con salsa BBQ Chipotle y salsa Mostaza & Miel.</p>
+                <p class="food-price card-text">4.00 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center h-100">
+              <img src="img/menu/entrante8.jpg" class="card-img-top" alt="Croquetas Ibéricas">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Croquetas Ibéricas</h5>
+                <p class="food-description card-text">Cremosas croquetas de jamón ibérico coronadas con paleta ibérica.</p>
+                <p class="food-price card-text">4.20 €</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ENSALADAS -->
       <div class="tab-pane fade" id="ensaladas-tab-pane" role="tabpanel" aria-labelledby="ensaladas-tab" tabindex="0">
         ...
       </div>
+      <!-- CARNES -->
       <div class="tab-pane fade" id="carnes-tab-pane" role="tabpanel" aria-labelledby="carnes-tab" tabindex="0">...
       </div>
+      <!-- PIZZAS -->
       <div class="tab-pane fade" id="pizzas-tab-pane" role="tabpanel" aria-labelledby="pizzas-tab" tabindex="0">...
       </div>
+      <!-- HAMBURGUESAS -->
       <div class="tab-pane fade" id="hamburguesas-tab-pane" role="tabpanel" aria-labelledby="hamburguesas-tab"
         tabindex="0">...
       </div>
+      <!-- POSTRES -->
       <div class="tab-pane fade" id="postres-tab-pane" role="tabpanel" aria-labelledby="postres-tab" tabindex="0">...
       </div>
+      <!-- BEBIDAS -->
       <div class="tab-pane fade" id="bebidas-tab-pane" role="tabpanel" aria-labelledby="bebidas-tab" tabindex="0">...
       </div>
 
