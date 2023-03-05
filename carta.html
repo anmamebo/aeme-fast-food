@@ -62,14 +62,14 @@
 
   <main class="container-fluid px-md-5 py-5">
     <!-- MENÚ TAB -->
-    <ul class="nav nav-tabs" id="menuTab" role="tablist">
+    <ul class="nav nav-pills nav-justified" id="menuTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="entrantes-tab" data-bs-toggle="tab" data-bs-target="#entrantes-tab-pane"
-          type="button" role="tab" aria-controls="entrantes-tab-pane" aria-selected="false">Entrantes</button>
+        <button class="nav-link active" id="entrantes-tab" data-bs-toggle="tab" data-bs-target="#entrantes-tab-pane"
+          type="button" role="tab" aria-controls="entrantes-tab-pane" aria-selected="true">Entrantes</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="ensaladas-tab" data-bs-toggle="tab" data-bs-target="#ensaladas-tab-pane"
-          type="button" role="tab" aria-controls="ensaladas-tab-pane" aria-selected="true">Ensaladas</button>
+        <button class="nav-link" id="ensaladas-tab" data-bs-toggle="tab" data-bs-target="#ensaladas-tab-pane"
+          type="button" role="tab" aria-controls="ensaladas-tab-pane" aria-selected="false">Ensaladas</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="carnes-tab" data-bs-toggle="tab" data-bs-target="#carnes-tab-pane" type="button"
@@ -91,12 +91,11 @@
         <button class="nav-link" id="bebidas-tab" data-bs-toggle="tab" data-bs-target="#bebidas-tab-pane" type="button"
           role="tab" aria-controls="bebidas-tab-pane" aria-selected="false">Bebidas</button>
       </li>
-
     </ul>
     <!-- MENÚ TAB CONTENT -->
     <div class="tab-content pt-4" id="menuTabContent">
       <!-- ENTRANTES -->
-      <div class="tab-pane fade " id="entrantes-tab-pane" role="tabpanel" aria-labelledby="entrantes-tab" tabindex="0">
+      <div class="tab-pane fade show active" id="entrantes-tab-pane" role="tabpanel" aria-labelledby="entrantes-tab" tabindex="0">
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
           <div class="col">
@@ -250,7 +249,7 @@
 
       </div>
       <!-- CARNES -->
-      <div class="tab-pane fade show active" id="carnes-tab-pane" role="tabpanel" aria-labelledby="carnes-tab"
+      <div class="tab-pane fade" id="carnes-tab-pane" role="tabpanel" aria-labelledby="carnes-tab"
         tabindex="0">
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
