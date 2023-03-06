@@ -17,6 +17,8 @@
   <!-- BOOTSTRAP -->
   <link href="css/bootstrap.css" rel="stylesheet" />
   <script defer src="js/bootstrap.bundle.js"></script>
+
+  <script defer src="js/toastTrigger.js"></script>
 </head>
 
 <body>
@@ -212,7 +214,7 @@
       <div class="modal-content">
         <div class="modal-header w-100">
           <p id="modal-header-title" class="m-0">SUSCRIPCIÓN</p>
-          <button data-bs-dismiss="modal">
+          <button id="closeModal" data-bs-dismiss="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-x-lg"
               viewBox="0 0 16 16">
               <path
@@ -222,7 +224,7 @@
         </div>
         <div class="modal-body">
           <p>Apúntate y sé el primero en recibir ofertas exclusivas.</p>
-          <form>
+          <form id="uneteForm" onsubmit="toastTrigger(event, 'successFormToast', true)">
             <div class="mb-3">
               <input type="text" class="form-control" id="inputNombre" placeholder="Nombre*">
             </div>
@@ -238,9 +240,21 @@
                 Quiero inscribirme para recibir ofertas especiales, sorteos y promociones.
               </label>
             </div>
-            <button type="submit" class="btn">ÚNETE</button>
+            <button id="uneteButton" type="submit" class="btn">ÚNETE</button>
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successFormToast" class="toast align-items-center" role="alert" aria-live="assertive"
+      aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Formulario enviado con exito.
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
     </div>
   </div>
