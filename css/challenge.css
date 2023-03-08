@@ -1,0 +1,161 @@
+@import url('variables.css');
+
+.game-container {
+  height: calc(100vh - 300px);
+  background: linear-gradient(#b7d6c7, transparent) #ffe2d1;
+  transition: background-color 1s linear;
+}
+
+.mediodia {
+  background-color: #ffdcf3;
+}
+
+.tarde {
+  background-color: #ffadad;
+}
+
+.noche {
+  background-color: #aca8c7;
+}
+
+.dino {
+  width: 84px;
+  height: 84px;
+
+  position: absolute;
+  bottom: 22px;
+  left: 42px;
+  z-index: 2;
+
+  background: url(../img/game/dino.png) repeat-x 0px 0px;
+  background-size: 336px 84px;
+  background-position-x: 0px;
+
+}
+
+.dino-running {
+  animation: animarDino 0.25s steps(2) infinite;
+}
+
+.dino-crashed {
+  background-position-x: -252px;
+}
+
+.ground {
+  width: 200%;
+  height: 42px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: url(../img/game/ground.png) repeat-x 0px 0px;
+  background-size: 50% 42px;
+
+}
+
+.burger {
+  width: 60px;
+  height: 60px;
+
+  position: absolute;
+  bottom: 16px;
+  left: 600px;
+  z-index: 1;
+
+  background: url(../img/game/burger.png) no-repeat;
+}
+
+.hotdog {
+  width: 90px;
+  height: 60px;
+
+  background: url(../img/game/hotdog.png) no-repeat;
+}
+
+
+.nube {
+  width: 92px;
+  height: 26px;
+
+  position: absolute;
+  z-index: 0;
+
+  background: url(../img/game/nube.png) no-repeat;
+  background-size: 92px 26px;
+}
+
+.score {
+  width: 100px;
+  height: 30px;
+
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 10;
+
+  color: #d48871;
+  font-family: Verdana;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+#refresh,
+.game-over-container,
+.game-over {
+  display: none;
+}
+
+.game-over-container {
+  color: var(--tertiary-color) !important;
+  width: 50% !important;
+}
+
+.game-over {
+  font-size: 25pt;
+  font-family: Oswald;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.final-score {
+  color: var(--primary-color);
+  font-size: 17pt;
+  font-family: Quicksand;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#refresh {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid transparent;
+  font-family: Oswald;
+  font-size: 12pt;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+#refresh:hover {
+  border: 1px solid var(--primary-color);
+
+}
+
+@keyframes animarDino {
+  from {
+    background-position-x: -84px;
+  }
+
+  to {
+    background-position-x: -252px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .game-over-container {
+    width: 100% !important;
+  }
+
+}
