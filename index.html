@@ -19,6 +19,7 @@
   <script defer src="js/bootstrap.bundle.js"></script>
 
   <script defer src="js/toastTrigger.js"></script>
+  <script defer src="js/goUpButton.js"></script>
 </head>
 
 <body>
@@ -229,13 +230,16 @@
           <p>Apúntate y sé el primero en recibir ofertas exclusivas.</p>
           <form id="uneteForm" onsubmit="toastTrigger(event, 'successFormToast', true)">
             <div class="mb-3">
-              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre*" aria-label="Introducir nombre">
+              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre*"
+                aria-label="Introducir nombre">
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos*" aria-label="Introducir apellidos">
+              <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos*"
+                aria-label="Introducir apellidos">
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email*" aria-label="Introducir email">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email*"
+                aria-label="Introducir email">
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="offers-check">
@@ -250,6 +254,7 @@
     </div>
   </div>
 
+  <!-- TOAST FORMULARIO CORRECTO -->
   <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="successFormToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="d-flex">
@@ -260,6 +265,15 @@
       </div>
     </div>
   </div>
+
+  <!-- BOTÓN SCROLL TO TOP -->
+  <button onclick="scrollToTop()" id="goUpButton" class="btn position-fixed" title="Ir arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up"
+      viewBox="0 0 16 16" alt="Flecha hacia arriba">
+      <path fill-rule="evenodd"
+        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+    </svg>
+  </button>
 
   <!-- FOOTER -->
   <footer class="container py-3 my-4">
