@@ -152,9 +152,36 @@
   }
 }
 
+.instructions-container {
+  width: 30% !important;
+  border: 1px solid var(--primary-color);
+}
+
+.instructions-container .line1 {
+  font-family: Oswald;
+  font-size: 25pt;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.instructions-container .line2,
+.instructions-container .line3,
+.instructions-container .line4 {
+  font-family: Quicksand;
+  font-size: 13pt;
+  font-weight: 500;
+  color: var(--tertiary-color);
+}
+
+
 @media only screen and (max-width: 992px) {
 
   .game-over-container {
+    width: 100% !important;
+  }
+
+  .instructions-container {
     width: 100% !important;
   }
 

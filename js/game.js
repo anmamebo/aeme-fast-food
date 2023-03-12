@@ -12,7 +12,12 @@ if (document.readyState === "complete" || document.readyState === "interactive")
 function init() {
   time = new Date();
   start();
+  setTimeout(hideInstructions, 5000);
   loop();
+}
+
+function hideInstructions() { 
+  document.querySelector(".instructions-container").style.display = "none";
 }
 
 function loop() {
