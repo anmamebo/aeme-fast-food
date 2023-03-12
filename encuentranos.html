@@ -56,98 +56,102 @@
     </div>
   </nav>
 
-  <!-- MAP -->
-  <div class="map-container container-fluid">
-    <div class="row h-100 justify-content-center">
-      <div class="map-info-container col-12 col-lg-5 col-xl-3">
-        <div class="row pt-5 ps-3 ps-md-5">
-          <div class="col-12">
-            <p class="p1 text-uppercase">A domicilio, para llevar, reservas,</p>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container-fluid m-0 p-0">
+    <!-- MAP -->
+    <div class="map-container container-fluid">
+      <div class="row h-100 justify-content-center">
+        <div class="map-info-container col-12 col-lg-5 col-xl-3">
+          <div class="row pt-5 ps-3 ps-md-5">
+            <div class="col-12">
+              <p class="p1 text-uppercase">A domicilio, para llevar, reservas,</p>
+            </div>
+            <div class="col-12">
+              <p class="p2 text-uppercase">Visitanos</p>
+            </div>
           </div>
-          <div class="col-12">
-            <p class="p2 text-uppercase">Visitanos</p>
+          <div class="location-search-result row mt-lg-4">
+            <div class="col-12">
+              <div id="number-search-result" class="row px-3 px-md-5 py-3">
+                <p class="m-0 col text-uppercase">3 Resultados</p>
+              </div>
+              <div class="row justify-content-end mt-3 px-3 d-none d-lg-flex">
+                <div class="col-6 text-end dropend">
+                  <button class="btn dropdown-toggle p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    data-bs-offset="0,30">
+                    Popularidad (asc)
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-uppercase" href="#">Alfabético (asc)</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Alfabético (desc)</a></li>
+                    <li><a class="dropdown-item text-uppercase disabled" href="#">Popularidad (asc)</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Popularidad (desc)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row order-buttons justify-content-between mt-3 px-3 d-lg-none">
+                <div class="col-6 col-sm-3 text-center">
+                  <button type="button" class="btn btn-primary">Alfabético (asc)</button>
+                </div>
+                <div class="col-6 col-sm-3 text-center">
+                  <button type="button" class="btn btn-primary">Alfabético (desc)</button>
+                </div>
+                <div class="col-6 col-sm-3 text-center mt-2 mt-sm-0">
+                  <button type="button" class="btn btn-primary order-button-active">Popularidad (asc)</button>
+                </div>
+                <div class="col-6 col-sm-3 text-center mt-2 mt-sm-0">
+                  <button type="button" class="btn btn-primary">Popularidad (desc)</button>
+                </div>
+              </div>
+              <!-- LOCALIZACIONES -->
+              <div id="locations-container" class="row px-3 px-md-5">
+                <div class="location-container pt-4">
+                  <p class="location-name">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <a target="_blank" href="https://goo.gl/maps/Q2XmEa7CkkxTvhbN9">UNIV. PABLO DE OLAVIDE</a>
+                  </p>
+                  <p>Ctra. de Utrera, 1</p>
+                  <p>41013, Sevilla</p>
+                </div>
+                <hr>
+                <div class="location-container">
+                  <p class="location-name">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <a target="_blank" href="https://goo.gl/maps/csgK8XiZXy7owJrj6">MONTEQUINTO</a>
+                  </p>
+                  <p>C. Numa, 55</p>
+                  <p>41089, Dos Hermanas</p>
+                </div>
+                <hr>
+                <div class="location-container">
+                  <p class="location-name">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-geo-alt-fill" viewBox="0 0 16 16" alt="Mapa">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <a target="_blank" href="https://goo.gl/maps/Fsfv3pZN1mSVUAgi9">ALCALÁ DE GUADAÍRA</a>
+                  </p>
+                  <p>¡Próxima apertura!</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="search-result row mt-lg-4">
-          <div class="col-12">
-            <div id="number-search-result" class="row px-3 px-md-5 py-3">
-              <p class="m-0 col text-uppercase">3 Resultados</p>
-            </div>
-            <div class="row justify-content-end mt-3 px-3 d-none d-lg-flex">
-              <div class="col-6 text-end dropend">
-                <button class="btn dropdown-toggle p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                  data-bs-offset="0,30">
-                  Popularidad (asc)
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-uppercase" href="#">Alfabético (asc)</a></li>
-                  <li><a class="dropdown-item text-uppercase" href="#">Alfabético (desc)</a></li>
-                  <li><a class="dropdown-item text-uppercase disabled" href="#">Popularidad (asc)</a></li>
-                  <li><a class="dropdown-item text-uppercase" href="#">Popularidad (desc)</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row order-buttons justify-content-between mt-3 px-3 d-lg-none">
-              <div class="col-6 col-sm-3 text-center">
-                <button type="button" class="btn btn-primary">Alfabético (asc)</button>
-              </div>
-              <div class="col-6 col-sm-3 text-center">
-                <button type="button" class="btn btn-primary">Alfabético (desc)</button>
-              </div>
-              <div class="col-6 col-sm-3 text-center mt-2 mt-sm-0">
-                <button type="button" class="btn btn-primary order-button-active">Popularidad (asc)</button>
-              </div>
-              <div class="col-6 col-sm-3 text-center mt-2 mt-sm-0">
-                <button type="button" class="btn btn-primary">Popularidad (desc)</button>
-              </div>
-            </div>
-            <!-- LOCALIZACIONES -->
-            <div id="locations-container" class="row px-3 px-md-5">
-              <div class="location-container pt-4">
-                <p class="location-name">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                  </svg>
-                  <a target="_blank" href="https://goo.gl/maps/Q2XmEa7CkkxTvhbN9">UNIV. PABLO DE OLAVIDE</a>
-                </p>
-                <p>Ctra. de Utrera, 1</p>
-                <p>41013, Sevilla</p>
-              </div>
-              <hr>
-              <div class="location-container">
-                <p class="location-name">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                  </svg>
-                  <a target="_blank" href="https://goo.gl/maps/csgK8XiZXy7owJrj6">MONTEQUINTO</a>
-                </p>
-                <p>C. Numa, 55</p>
-                <p>41089, Dos Hermanas</p>
-              </div>
-              <hr>
-              <div class="location-container">
-                <p class="location-name">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                  </svg>
-                  <a target="_blank" href="https://goo.gl/maps/Fsfv3pZN1mSVUAgi9">ALCALÁ DE GUADAÍRA</a>
-                </p>
-                <p>¡Próxima apertura!</p>
-              </div>
-            </div>
-          </div>
+        <!-- MAPA -->
+        <div class="map col-12 col-lg-7 col-xl-9">
+          <iframe class="w-100 h-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.461958867023!2d-5.939592784431482!3d37.355244743957535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126fada8bb9993%3A0xf1425beda6074232!2sUniversidad%20Pablo%20de%20Olavide%20Sevilla!5e0!3m2!1ses!2ses!4v1677591969800!5m2!1ses!2ses"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </div>
-      <div class="map col-12 col-lg-7 col-xl-9">
-        <iframe class="w-100 h-100"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.461958867023!2d-5.939592784431482!3d37.355244743957535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126fada8bb9993%3A0xf1425beda6074232!2sUniversidad%20Pablo%20de%20Olavide%20Sevilla!5e0!3m2!1ses!2ses!4v1677591969800!5m2!1ses!2ses"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-  </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="container py-3 my-4">

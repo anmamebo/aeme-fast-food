@@ -27,7 +27,7 @@
   letter-spacing: 1px;
 }
 
-.search-result .dropend .btn {
+.location-search-result .dropend .btn {
   font-family: Oswald;
   letter-spacing: 1px;
   color: var(--primary-color);
@@ -36,23 +36,23 @@
   border: 1px solid transparent !important;
 }
 
-.search-result .dropend .btn:hover {
+.location-search-result .dropend .btn:hover {
   border: 1px solid var(--primary-color) !important;
 }
 
-.search-result .dropdown-menu {
+.location-search-result .dropdown-menu {
   font-family: Oswald;
   letter-spacing: 1px;
   background-color: var(--secondary-color);
   border-color: var(--primary-color);
 }
 
-.search-result .dropdown-menu .dropdown-item {
+.location-search-result .dropdown-menu .dropdown-item {
   border-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.search-result .dropdown-menu .dropdown-item:hover {
+.location-search-result .dropdown-menu .dropdown-item:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -66,7 +66,7 @@
   letter-spacing: 2px;
 }
 
-.search-result .order-buttons button {
+.location-search-result .order-buttons button {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-color: var(--primary-color);
@@ -76,8 +76,8 @@
   font-size: 10pt;
 }
 
-.search-result .order-buttons button.order-button-active,
-.search-result .order-buttons button:hover {
+.location-search-result .order-buttons button.order-button-active,
+.location-search-result .order-buttons button:hover {
   background-color: var(--secondary-color) !important;
   color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
@@ -161,7 +161,7 @@
 
 @media only screen and (max-width: 576px) {
 
-  .search-result .order-buttons button {
+  .location-search-result .order-buttons button {
     font-size: 7pt;
   }
 
