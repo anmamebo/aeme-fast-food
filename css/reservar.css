@@ -1,44 +1,51 @@
 @import url('variables.css');
 
-.imagen-container {
-    height: calc(100vh - 100px);
+.header-reserva {
+  background-image: url(../img/fondo-textura.jpg);
+  background-size: cover;
 }
 
-.reserva-container img {
-    object-fit: cover;
-    object-position: bottom;
+.header-reserva div p {
+  color: var(--tertiary-color);
 }
 
-.formulario-container {
-    font-family: Quicksand;
-    border-radius: 18px !important;
-    -webkit-border-radius: 18px !important;
-    -moz-border-radius: 18px !important;
-    -ms-border-radius: 18px !important;
-    -o-border-radius: 18px !important;
-    border: 1px solid var(--primary-color);
-    color: var(--tertiary-color);
-    width: 25% !important;
-    position: absolute !important;
-    top: 0;
-    left: 0;
+.header-reserva div p:first-child {
+  font-family: Oswald;
+  font-size: 23pt;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
-.formulario-container > div > p.h3 {
-    font-family: Oswald;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    color: var(--secondary-color);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+.header-reserva div p:nth-child(2) {
+  font-family: Quicksand;
+  font-size: 14pt;
+  font-weight: 500;
 }
 
-.form-control,
-.form-select {
+#reservaForm button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  /* border: 0 !important; */
+  border-color: var(--secondary-color);
+  padding: 8px 50px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+#reservaForm button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#reservaForm .form-control,
+#reservaForm .form-select {
     color: var(--primary-color) !important;
     border: none !important;
     border-bottom: 1px solid var(--primary-color) !important;
@@ -49,82 +56,50 @@
     -o-border-radius: 0 !important;
 }
 
-#reservarButton {
-    margin-top: 6px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-weight: 700;
-    font-family: Oswald;
-    letter-spacing: 2px;
-    border-color: var(--secondary-color);
-    padding: 8px 50px;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    float: right;
+.input-group-text {
+  border: none !important;
+  border-bottom: 1px solid var(--primary-color) !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
 }
 
-#reservarButton:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+#reservaForm svg {
+  color: var(--primary-color);
 }
 
-
-
-
-/* Responsive */
-@media only screen and (max-width: 1320px) {
-
-    .formulario-container {
-        width: 40% !important;
-    }
-
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
 }
 
-@media only screen and (max-width: 1140px) {
-
-    .formulario-container {
-        width: 50% !important;
-    }
-
+.content-reserva {
+  background-image: url(../img/reserva-fondo.jpg);
+  background-position: bottom;
 }
 
-@media only screen and (max-width: 992px) {
-
-    .imagen-container {
-        height: 400px;
-    }
-
-    .formulario-container {
-        position: relative !important;
-        border: none;
-        width: 100% !important;
-        display: block;
-        margin: 0 !important;
-        max-width: 100% !important;
-        padding: 20px 100px !important;
-    }
-
+.content-reserva div:first-child {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 @media only screen and (max-width: 768px) {
 
-    .imagen-container {
-        height: 270px;
-    }
-
-    .formulario-container {
-        padding: 20px 50px !important;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    .formulario-container {
-        padding: 20px 10px !important;
-    }
+  .content-reserva {
+    background-image: none;
+  }
 
 }
