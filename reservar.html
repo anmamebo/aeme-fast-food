@@ -57,7 +57,7 @@
   </nav>
 
   <!-- RESERVA CONTAINER -->
-  <div class="reserva-container position-relative container-fluid p-0">
+  <main class="reserva-container position-relative container-fluid p-0">
     <!-- IMAGEN FONDO -->
     <div class="imagen-container">
       <figcaption class="w-100 h-100">
@@ -71,21 +71,21 @@
         <p class="m-0 mb-4 py-3 text-center h3">HAZ TU RESERVA</p>
         <p>Te ayudamos a encontrar la reserva ideal para ti. Tú tan solo preocupate de disfrutar.</p>
       </div>
-      <div class="col-12">
+      <section class="col-12">
         <!-- FORMULARIO RESERVA -->
         <form>
           <div class="mb-3">
-            <select id="restaurantInput" class="form-select" aria-label="Default select example">
+            <select id="restaurantInput" class="form-select" aria-label="Seleccionar restaurante">
               <option selected>Restaurante</option>
               <option value="1">Univ. Pablo de Olavide</option>
               <option value="2" disabled>Alcalá de Guadaíra --- ¡Proxima apertura!</option>
             </select>
           </div>
           <div class="mb-3">
-            <input type="date" class="form-control" id="dateInput">
+            <input id="dateInput" class="form-control" type="date" aria-label="Seleccionar fecha">
           </div>
           <div class="mb-3">
-            <select id="hourInput" class="form-select" aria-label="Default select example">
+            <select id="hourInput" class="form-select" aria-label="Seleccionar hora">
               <option selected>Hora</option>
               <option value="" disabled>Comida</option>
               <option value="1">13:00</option>
@@ -107,7 +107,7 @@
             </select>
           </div>
           <div class="mb-3">
-            <select id="peopleInput" class="form-select" aria-label="Default select example">
+            <select id="peopleInput" class="form-select" aria-label="Seleccionar número de personas">
               <option selected>Personas</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -127,19 +127,20 @@
             </select>
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" id="nameInput" placeholder="Nombre">
+            <input id="nameInput" class="form-control" type="text" placeholder="Nombre" aria-label="Introducir nombre">
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+            <input id="emailInput" class="form-control" type="email" placeholder="Email" aria-label="Introducir email">
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" id="phoneInput" placeholder="Teléfono">
+            <input id="phoneInput" class="form-control" type="text" placeholder="Teléfono"
+              aria-label="Introducir número de teléfono">
           </div>
           <button id="reservarButton" type="submit" class="btn">RESERVAR MESA</button>
         </form>
-      </div>
+      </section>
     </div>
-  </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="container py-3 my-4">
