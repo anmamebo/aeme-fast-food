@@ -58,39 +58,44 @@
     </div>
   </nav>
 
-  <!-- GAME CONTAINER -->
-  <div class="game-container container-fluid position-relative overflow-hidden">
-    
-    <div class="instructions-container container bg-transparent mt-5 py-4">
-      <div class="row">
-        <div class="line1 col-12 w-100 text-center text-uppercase">Instrucciones:</div>
-        <div class="line2 col-12 w-100 text-center mt-4">Consigue puntos saltando comidas</div>
-        <div class="line3 col-12 w-100 text-center mt-2 d-none d-lg-block">Usa el espacio para saltar</div>
-        <div class="line3 col-12 w-100 text-center mt-2 d-lg-none">Pulsa la pantalla para saltar</div>
-      </div>
-    </div>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container-fluid m-0 p-0">
+    <!-- GAME CONTAINER -->
+    <div class="game-container container-fluid position-relative overflow-hidden">
 
-    <div class="game-over-container container bg-transparent mt-5 py-4">
-      <div class="row">
-        <div class="col game-over w-100 text-center">GAME OVER</div>
-      </div>
-      <div class="row mt-2">
-        <div class="col final-score text-center"></div>
-      </div>
-      <div class="row justify-content-center mt-4">
-        <div class="col text-center">
-          <button id="refresh" class="btn py-2 px-4 text-uppercase">Reiniciar juego</button>
+      <!-- INSTRUCCIONES -->
+      <div class="instructions-container container bg-transparent mt-5 py-4">
+        <div class="row">
+          <div class="line1 col-12 w-100 text-center text-uppercase">Instrucciones:</div>
+          <P class="line2 col-12 w-100 text-center mt-4">Consigue puntos saltando comidas</P>
+          <P class="line3 col-12 w-100 text-center mt-2 d-none d-lg-block">Usa el espacio para saltar</P>
+          <P class="line3 col-12 w-100 text-center mt-2 d-lg-none">Pulsa la pantalla para saltar</P>
         </div>
       </div>
+
+      <!-- GAME OVER -->
+      <div class="game-over-container container bg-transparent mt-5 py-4">
+        <div class="row">
+          <div class="col game-over w-100 text-center">GAME OVER</div>
+        </div>
+        <div class="row mt-2">
+          <div class="col final-score text-center"></div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col text-center">
+            <button id="refresh" class="btn py-2 px-4 text-uppercase">Reiniciar juego</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ground"></div>
+
+      <div class="dino dino-running"></div>
+
+      <div class="score">0</div>
+
     </div>
-
-    <div class="ground"></div>
-
-    <div class="dino dino-running"></div>
-
-    <div class="score">0</div>
-
-  </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="container py-3 my-4">

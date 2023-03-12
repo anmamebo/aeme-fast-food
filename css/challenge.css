@@ -162,16 +162,17 @@
   font-size: 25pt;
   letter-spacing: 1px;
   font-weight: 800;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .instructions-container .line2,
 .instructions-container .line3,
 .instructions-container .line4 {
   font-family: Quicksand;
-  font-size: 13pt;
-  font-weight: 500;
-  color: var(--tertiary-color);
+  font-size: 17pt;
+  color: var(--primary-color);
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 
