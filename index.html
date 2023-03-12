@@ -62,9 +62,9 @@
   <div id="indexCarousel" class="carousel-height carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        aria-label="Deslizar 1"></button>
+      <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="1" aria-label="Deslizar 2"></button>
+      <button type="button" data-bs-target="#indexCarousel" data-bs-slide-to="2" aria-label="Deslizar 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -229,17 +229,17 @@
           <p>Apúntate y sé el primero en recibir ofertas exclusivas.</p>
           <form id="uneteForm" onsubmit="toastTrigger(event, 'successFormToast', true)">
             <div class="mb-3">
-              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre*">
+              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre*" aria-label="Introducir nombre">
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos*">
+              <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos*" aria-label="Introducir apellidos">
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email*">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email*" aria-label="Introducir email">
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">
+              <input type="checkbox" class="form-check-input" id="offers-check">
+              <label class="form-check-label" for="offers-check">
                 Quiero inscribirme para recibir ofertas especiales, sorteos y promociones.
               </label>
             </div>
