@@ -24,7 +24,7 @@ select::selection {
 }
 
 #goUpButton {
-  bottom: 40px;
+  bottom: 75px;
   right: 40px;
   display: none;
   padding: 15px;
@@ -142,7 +142,7 @@ footer {
   }
 
   #goUpButton {
-    bottom: 30px;
+    bottom: 75px;
     right: 15px;
     display: none;
     padding: 8px;
