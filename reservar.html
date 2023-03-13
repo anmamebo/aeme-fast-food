@@ -68,14 +68,14 @@
     </div>
 
     <!-- FORMULARIO CONTAINER -->
-    <div class="formulario-container container bg-white p-lg-3 mt-lg-5 ms-lg-5 row">
+    <section class="formulario-container container bg-white p-lg-3 mt-lg-5 ms-lg-5 row">
       <div class="col-12">
         <p class="m-0 mb-4 py-3 text-center h3">HAZ TU RESERVA</p>
         <p>Te ayudamos a encontrar la reserva ideal para ti. Tú tan solo preocupate de disfrutar.</p>
       </div>
-      <section class="col-12">
+      <div class="col-12">
         <!-- FORMULARIO RESERVA -->
-        <form id="reservaForm"  onsubmit="toastTrigger(event, 'successFormToast', false)">
+        <form id="reservaForm" onsubmit="toastTrigger(event, 'successFormToast', false)">
           <div class="input-group mb-3">
             <select id="restaurantInput" class="form-select" aria-label="Seleccionar restaurante">
               <option selected disabled>Restaurante</option>
@@ -189,8 +189,20 @@
           </div>
           <button id="reservarButton" type="submit" class="btn mt-3">RESERVAR MESA</button>
         </form>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- BANNER CARTA -->
+    <section class="menu-banner-container container-fluid py-5">
+      <div class="row text-center">
+        <div class="col-12">
+          <p>CONOCE NUESTRA CARTA</p>
+        </div>
+        <div class="col-12">
+          <a href="carta.html" type="button" role="button" class="btn">VER</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- TOAST FORMULARIO CORRECTO -->

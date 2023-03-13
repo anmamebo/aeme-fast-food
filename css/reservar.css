@@ -95,6 +95,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: auto;
 }
 
+/* Menú banner */
+.menu-banner-container {
+  background-image: url(../img/fondo-textura.jpg);
+  background-size: cover;
+}
+
+.menu-banner-container p {
+  font-weight: 800;
+  font-size: 19pt;
+  font-family: Quicksand;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+.menu-banner-container a {
+  background-color: var(--secondary-color);
+  font-weight: 800;
+  font-family: Oswald;
+  letter-spacing: 2px;
+  padding: 10px 40px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.menu-banner-container a:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
 
 
 /* Responsive */
